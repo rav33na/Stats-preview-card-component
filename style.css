@@ -26,6 +26,12 @@ body {
   color: #FFFFFF;
   height: 956px;
 }
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1440px;
+    height: 800px;
+  }
+}
 
 .card {
   color: #FFFFFF;
@@ -35,8 +41,23 @@ body {
   border-radius: 8px;
   margin-top: 88px;
 }
+@media screen and (min-width: 1440px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1110px;
+    height: 446px;
+    margin: 177px;
+  }
+}
 .card__highlight {
   color: #AB5CDB;
+}
+@media screen and (min-width: 1440px) {
+  .card__content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .card__image {
   width: 100%;
@@ -49,10 +70,23 @@ body {
   mix-blend-mode: multiply;
   opacity: 0.75;
 }
+@media screen and (min-width: 1440px) {
+  .card__image {
+    background-image: url(././images/image-header-desktop.jpg);
+    width: 540px;
+    height: 446px;
+  }
+}
 .card__image-overlay {
   background-color: #AB5CDB;
   border-radius: 8px 8px 0 0;
   height: 240px;
+}
+@media screen and (min-width: 1440px) {
+  .card__image-overlay {
+    width: 540px;
+    height: 446px;
+  }
 }
 .card__header {
   width: 264px;
@@ -61,6 +95,18 @@ body {
   line-height: 32px;
   text-align: center;
   margin-top: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .card__header {
+    width: 403px;
+    height: 88px;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+    margin-top: 71px;
+    margin-left: 72px;
+    margin-right: 95px;
+  }
 }
 .card__info {
   font-size: 15px;
@@ -73,6 +119,18 @@ body {
   mix-blend-mode: normal;
   opacity: 0.75;
 }
+@media screen and (min-width: 1440px) {
+  .card__info {
+    width: 374px;
+    height: 75px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 71.5px;
+    margin-right: 124.5px;
+  }
+}
 .card__stats {
   font-size: 2rem;
   list-style: none;
@@ -82,10 +140,25 @@ body {
   padding-right: 32px;
   padding-left: 31px;
 }
+@media screen and (min-width: 1440px) {
+  .card__stats {
+    display: flex;
+    flex-direction: row;
+    width: 374px;
+    margin-right: 87px;
+    margin-top: 72px;
+    text-align: left;
+  }
+}
 .card__stats-num {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 2px;
+}
+@media screen and (min-width: 1440px) {
+  .card__stats-num {
+    margin-right: 60px;
+  }
 }
 .card__stats-text {
   font-size: 12px;
@@ -93,4 +166,9 @@ body {
   letter-spacing: 1px;
   opacity: 60%;
   margin-bottom: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .card__stats-text {
+    padding-right: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */
