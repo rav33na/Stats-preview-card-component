@@ -1,9 +1,89 @@
 @import "./partials/variables";
+@import "./partials/typography";
+
+* {
+    margin: 0 auto;
+}
 
 body {
-    margin: 0 auto;
     background-color: $darkblue;
+    font-family: Inter;
+    color: $white;
+    height: 956px;
 }
 
 .card {
+    color: $white;
+    background-color: $darkpurple;
+    width: 327px;
+    height: 780px;
+    border-radius: 8px;
+    margin-top: 88px;
+
+    &__highlight {
+        color: $purple;
+    }
+
+    &__image {
+        width: 100%;
+        height: 240px;
+        border: none;
+        border-radius: 8px 8px 0 0;
+        background-image: url(././images/image-header-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: multiply;
+        opacity: 0.75;
+        
+        &-overlay {
+            background-color: $purple;
+            border-radius: 8px 8px 0 0;
+            height: 240px;
+        }
+    }
+
+    &__header {
+        width: 264px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    &__info {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+        width: 264px;
+        height: 100px;
+        margin-top: 16px;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
+
+    &__stats {
+        font-size: 2rem;
+        list-style: none;
+        margin-top: 40px;
+        width: 264px;
+        text-align: center;
+        padding-right: 32px;
+        padding-left: 31px;
+
+        &-num {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        &-text {
+            font-size: 12px;
+            line-height: 25px;
+            letter-spacing: 1px;
+            opacity: 60%;
+            margin-bottom: 24px;
+        }
+    }
 }
